@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: ApiVersioning
+
+
+  # Api Versioning Configuration
+  mvc:
+    apiversion:
+      default: 1.0
+      use:
+        header: api-version
+        # query-parameter: version - Can use both approaches to implement versioning
+endpoint:
+  name: api-version
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework.web: DEBUG
