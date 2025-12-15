@@ -6,7 +6,7 @@ spring:
   # Api Versioning Configuration
   mvc:
     apiversion:
-      default: 1.0
+      default: v1
       use:
         header: api-version
         # query-parameter: version - Can use both approaches to implement versioning
